@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Color</title>
+
+    <style>
+      #red {
+        padding: 15px;
+        margin: 10px;
+        font-family: sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        width: 200px;
+        height: 100px;
+        background-color: red;
+        border: none;
+        border-radius: 20px;
+      }
+
+      #blue {
+        padding: 15px;
+        margin: 10px;
+        font-family: sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        width: 200px;
+        height: 100px;
+        background-color: blue;
+        border: none;
+        border-radius: 20px;
+      }
+
+      #black {
+        padding: 15px;
+        margin: 10px;
+        font-family: sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        width: 200px;
+        height: 100px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 20px;
+      }
+
+      #yellow {
+        padding: 15px;
+        margin: 10px;
+        font-family: sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        width: 200px;
+        height: 100px;
+        background-color: yellow;
+        border: none;
+        border-radius: 20px;
+      }
+
+      #purple {
+        padding: 15px;
+        margin: 10px;
+        font-family: sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        width: 200px;
+        height: 100px;
+        background-color: purple;
+        border: none;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Changing Background Color</h1>
+    <button id="red">Red</button>
+    <button id="blue">Blue</button>
+    <button id="black">Black</button>
+    <button id="yellow">Yellow</button>
+    <button id="purple">Purple</button>
+
+    <script>
+      let buttons = document.getElementsByTagName("button");
+
+      for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", function (event) {
+          console.log(event);
+          document.body.style.backgroundColor = buttons[i].id;
+        });
+      }
+    </script>
+  </body>
+</html>
